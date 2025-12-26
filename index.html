@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>WhatsApp Isis</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside>
+      <h2>Conversas</h2>
+      <ul id="conversations"></ul>
+    </aside>
+
+<div class="template-area">
+  <input id="templateNumber" placeholder="Número com DDI (ex: 551199...)" />
+  <input id="templateName" placeholder="Nome do template" />
+  <input id="templateVars" placeholder="Variáveis (ex: Caio, Pedido #123)" />
+  <button id="sendTemplate">Iniciar conversa</button>
+</div>
+
+    <main>
+      <div id="chat-header">Selecione uma conversa</div>
+      <div id="messages"></div>
+
+      <div class="input-area">
+        <input id="to" placeholder="Número" disabled />
+        <input id="text" placeholder="Digite a mensagem" />
+        <button id="send">Enviar</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
